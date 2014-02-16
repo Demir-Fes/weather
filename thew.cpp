@@ -216,7 +216,6 @@ void TheWeather::layout()
 
     for(int i = 0; i < 5; ++i)
     {
-        std::cout << map["code" + std::to_string(i+1)] + ".gif" << std::endl;
 
         m_aTexture[i].loadFromFile(map["code" + std::to_string(i+1)] + ".gif");
         m_aImage[i].setTexture(m_aTexture[i]);
