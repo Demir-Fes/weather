@@ -4,8 +4,12 @@ weather
 for learning purpose .. get xml then parse and display .. sfml irrxml
 
 
-#include <thew.h>
-#include <SFML/Window.hpp>
+<b>usage example:</b>
+
+<pre>
+
+#include "thew.h"
+#include "SFML/Window.hpp"
 
 int main()
 {
@@ -32,3 +36,4 @@ int main()
         window.display();
     }
 }
+</pre>
