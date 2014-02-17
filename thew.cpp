@@ -4,9 +4,6 @@ TheWeather::TheWeather(sf::Font& font, const std::string& woid)
 {
     m_texture.create(800, 600);
     m_sprite.setTexture(m_texture.getTexture());
-    m_sprite.setOrigin(0, 600);
-    m_sprite.setScale(1, -1);
-
 
     m_TexTitle.setFont(font);
     m_TexTitle.setCharacterSize(16);
@@ -252,6 +249,7 @@ void TheWeather::layout()
         m_texture.draw(m_aTexText[i]);
 
     }
+    m_texture.display();
 }
 
 void TheWeather::draw(sf::RenderTarget& target, sf::RenderStates states) const
